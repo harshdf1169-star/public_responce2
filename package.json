@@ -1,0 +1,28 @@
+{
+  "name": "omnipulse-ai",
+  "version": "1.0.0",
+  "description": "OmniPulse AI — Omnichannel AI Customer Experience & Real-Time Sentiment Intelligence Platform",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "seed": "npm run seed --prefix server",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "customer-experience",
+    "cx",
+    "ai-agent",
+    "sentiment-intelligence",
+    "gemini-api",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "OmniPulse AI Engineering Team",
+  "license": "MIT"
+}
